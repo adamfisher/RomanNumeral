@@ -1,7 +1,7 @@
-# RomanNumeral
+# ![](https://raw.githubusercontent.com/adamfisher/RomanNumeral/master/icon.png) RomanNumeral
 This is a C# .NET data type representation of the numeric system used in ancient Rome, employing combinations of letters from the Latin alphabet. Permissible values fall within the range of 1 - 3,999.
 
-This package is available as a [**Nuget packge**](#) on nuget.org.
+This package is available as a [**Nuget package**](https://www.nuget.org/packages/RomanNumeral) on nuget.org.
 
 ```Math
 I, II, III, IV, V, VI, VII, VIII, IX, X ...
