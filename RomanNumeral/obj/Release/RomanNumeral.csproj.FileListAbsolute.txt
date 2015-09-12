@@ -1,0 +1,4 @@
+D:\Projects\RomanNumeral\RomanNumeral\bin\Release\RomanNumeral.dll
+D:\Projects\RomanNumeral\RomanNumeral\bin\Release\RomanNumeral.pdb
+D:\Projects\RomanNumeral\RomanNumeral\obj\Release\RomanNumeral.dll
+D:\Projects\RomanNumeral\RomanNumeral\obj\Release\RomanNumeral.pdb

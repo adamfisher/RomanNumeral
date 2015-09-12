@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
+  <metadata>
+    <id>AdamFisher.RomanNumeral</id>
+    <version>1.0.0</version>
+    <authors>Adam Fisher</authors>
+    <description>A numeric type representing roman numerals.</description>
+    <language>en-US</language>
+	<iconUrl>https://raw.githubusercontent.com/adamfisher/RomanNumeral/master/icon.png</iconUrl>
+    <projectUrl>https://github.com/adamfisher/RomanNumeral</projectUrl>
+    <licenseUrl>https://github.com/adamfisher/RomanNumeral/blob/master/LICENSE</licenseUrl>
+	<tags>roman numeral, roman, numeral, data type, number, math</tags>
+  </metadata>
+  <files>
+    <file src="RomanNumeral\bin\Release\*.dll" target="lib" />
+  </files>
+</package>

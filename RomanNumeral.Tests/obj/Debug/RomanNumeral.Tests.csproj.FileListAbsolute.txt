@@ -1,0 +1,11 @@
+D:\Projects\RomanNumeral\RomanNumeral.Tests\bin\Debug\TestValues.txt
+D:\Projects\RomanNumeral\RomanNumeral.Tests\bin\Debug\RomanNumeral.Tests.dll
+D:\Projects\RomanNumeral\RomanNumeral.Tests\bin\Debug\RomanNumeral.Tests.pdb
+D:\Projects\RomanNumeral\RomanNumeral.Tests\bin\Debug\Machine.Specifications.Clr4.dll
+D:\Projects\RomanNumeral\RomanNumeral.Tests\bin\Debug\Machine.Specifications.dll
+D:\Projects\RomanNumeral\RomanNumeral.Tests\bin\Debug\Machine.Specifications.Should.dll
+D:\Projects\RomanNumeral\RomanNumeral.Tests\bin\Debug\RomanNumeral.dll
+D:\Projects\RomanNumeral\RomanNumeral.Tests\bin\Debug\RomanNumeral.pdb
+D:\Projects\RomanNumeral\RomanNumeral.Tests\obj\Debug\RomanNumeral.Tests.csprojResolveAssemblyReference.cache
+D:\Projects\RomanNumeral\RomanNumeral.Tests\obj\Debug\RomanNumeral.Tests.dll
+D:\Projects\RomanNumeral\RomanNumeral.Tests\obj\Debug\RomanNumeral.Tests.pdb
