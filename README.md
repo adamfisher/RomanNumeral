@@ -45,7 +45,3 @@ Console.WriteLine(numberOne / numberTwo);		// II
 Console.WriteLine(numberOne + numberTwo);		// XV
 Console.WriteLine(numberOne - numberTwo);		// V
 ```
-
-## License & Credits
-
-Feel free t 
