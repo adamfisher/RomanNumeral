@@ -1,5 +1,0 @@
-D:\Projects\RomanNumeral\RomanNumeral\obj\Debug\RomanNumeral.csprojResolveAssemblyReference.cache
-D:\Projects\RomanNumeral\RomanNumeral\bin\Debug\RomanNumeral.dll
-D:\Projects\RomanNumeral\RomanNumeral\bin\Debug\RomanNumeral.pdb
-D:\Projects\RomanNumeral\RomanNumeral\obj\Debug\RomanNumeral.dll
-D:\Projects\RomanNumeral\RomanNumeral\obj\Debug\RomanNumeral.pdb

@@ -1,7 +1,8 @@
 ﻿using System;
 using Machine.Specifications;
+using RomanNumerals;
 
-namespace RomanNumeral.Tests
+namespace RomanNumerals.Tests
 {
     /// <summary>
     /// Multiplication
@@ -11,7 +12,7 @@ namespace RomanNumeral.Tests
     public class When_multiplying_two_numbers
     {
         protected static int expectedResult;
-        protected static RomanNumeral numberOne, numberTwo, result;
+        protected static RomanNumerals.RomanNumeral numberOne, numberTwo, result;
 
         private Establish context = () =>
         {
@@ -19,8 +20,8 @@ namespace RomanNumeral.Tests
             var first = random.Next(50, 100);
             var second = random.Next(1, 39);
 
-            numberOne = new RomanNumeral(first);
-            numberTwo = new RomanNumeral(second);
+            numberOne = new RomanNumerals.RomanNumeral(first);
+            numberTwo = new RomanNumerals.RomanNumeral(second);
             expectedResult = first * second;
         };
 
@@ -41,7 +42,7 @@ namespace RomanNumeral.Tests
     public class When_dividing_two_numbers
     {
         protected static int expectedResult;
-        protected static RomanNumeral numberOne, numberTwo, result;
+        protected static RomanNumerals.RomanNumeral numberOne, numberTwo, result;
 
         private Establish context = () =>
         {
@@ -49,8 +50,8 @@ namespace RomanNumeral.Tests
             var first = random.Next(50, 100);
             var second = random.Next(1, 39);
 
-            numberOne = new RomanNumeral(first);
-            numberTwo = new RomanNumeral(second);
+            numberOne = new RomanNumerals.RomanNumeral(first);
+            numberTwo = new RomanNumerals.RomanNumeral(second);
             expectedResult = first / second;
         };
 
@@ -67,11 +68,11 @@ namespace RomanNumeral.Tests
     /// Addition
     /// </summary>
     [Tags("Math")]
-    [Subject(typeof(RomanNumeral))]
+    [Subject(typeof(RomanNumerals.RomanNumeral))]
     public class When_adding_two_numbers
     {
         protected static int expectedResult;
-        protected static RomanNumeral numberOne, numberTwo, result;
+        protected static RomanNumerals.RomanNumeral numberOne, numberTwo, result;
 
         private Establish context = () =>
         {
@@ -79,8 +80,8 @@ namespace RomanNumeral.Tests
             var first = random.Next(50, 100);
             var second = random.Next(1, 39);
 
-            numberOne = new RomanNumeral(first);
-            numberTwo = new RomanNumeral(second);
+            numberOne = new RomanNumerals.RomanNumeral(first);
+            numberTwo = new RomanNumerals.RomanNumeral(second);
             expectedResult = first + second;
         };
 
@@ -97,11 +98,11 @@ namespace RomanNumeral.Tests
     /// Subtraction
     /// </summary>
     [Tags("Math")]
-    [Subject(typeof(RomanNumeral))]
+    [Subject(typeof(RomanNumerals.RomanNumeral))]
     public class When_subtracting_two_numbers
     {
         protected static int expectedResult;
-        protected static RomanNumeral numberOne, numberTwo, result;
+        protected static RomanNumerals.RomanNumeral numberOne, numberTwo, result;
 
         private Establish context = () =>
         {
@@ -109,8 +110,8 @@ namespace RomanNumeral.Tests
             var first = random.Next(50, 100);
             var second = random.Next(1, 39);
 
-            numberOne = new RomanNumeral(first);
-            numberTwo = new RomanNumeral(second);
+            numberOne = new RomanNumerals.RomanNumeral(first);
+            numberTwo = new RomanNumerals.RomanNumeral(second);
             expectedResult = first - second;
         };
 

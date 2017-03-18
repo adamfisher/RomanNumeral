@@ -1,13 +1,13 @@
-﻿using Machine.Specifications;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
+using Machine.Specifications;
 
-namespace RomanNumeral.Tests
+namespace RomanNumerals.Tests
 {
     /// <summary>
     /// Numeric to roman numeral
     /// </summary>
     [Tags("Conversion")]
-    [Subject(typeof(RomanNumeral))]
+    [Subject(typeof(RomanNumerals.RomanNumeral))]
     public class When_converting_numeric_values_to_roman_numerals
     {
         protected static int ExpectedNumber;
@@ -23,7 +23,7 @@ namespace RomanNumeral.Tests
         {
             foreach (var number in NumeralMappings.Keys)
             {
-                var numeral = new RomanNumeral(number).ToString();
+                var numeral = new RomanNumerals.RomanNumeral(number).ToString();
                 var expectedNumeral = NumeralMappings[number];
 
                 if (!numeral.Equals(expectedNumeral))
@@ -48,7 +48,7 @@ namespace RomanNumeral.Tests
     /// Roman numeral to numeric
     /// </summary>
     [Tags("Conversion")]
-    [Subject(typeof(RomanNumeral))]
+    [Subject(typeof(RomanNumerals.RomanNumeral))]
     public class When_converting_roman_numerals_values_to_numeric
     {
         protected static int InvalidNumber;
@@ -64,7 +64,7 @@ namespace RomanNumeral.Tests
         {
             foreach (var expectedNumeral in NumeralMappings.Values)
             {
-                var convertedNumber = new RomanNumeral(expectedNumeral).ToInt();
+                var convertedNumber = new RomanNumerals.RomanNumeral(expectedNumeral).ToInt();
 
                 if (!NumeralMappings[convertedNumber].Equals(expectedNumeral))
                 {
