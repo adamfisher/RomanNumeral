@@ -1,9 +1,8 @@
 ﻿using System;
-using System.Collections;
 using System.Collections.Generic;
 using System.IO;
 
-namespace RomanNumeral.Tests
+namespace RomanNumerals.Tests
 {
     public static class TestUtils
     {
