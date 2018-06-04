@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Text;
 
-namespace RomanNumeral
+namespace RomanNumerals
 {
     /// <summary>
     /// Represents the numeric system used in ancient Rome, employing combinations of letters from the Latin alphabet to signify values.

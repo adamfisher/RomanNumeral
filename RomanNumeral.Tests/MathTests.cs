@@ -1,125 +1,76 @@
-﻿using System;
-using Machine.Specifications;
+using System;
+using FluentAssertions;
+using Xunit;
 
-namespace RomanNumeral.Tests
+namespace RomanNumerals.Tests
 {
-    /// <summary>
-    /// Multiplication
-    /// </summary>
-    [Tags("Math")]
-    [Subject(typeof(RomanNumeral))]
-    public class When_multiplying_two_numbers
+    public class MathTests
     {
-        protected static int expectedResult;
-        protected static RomanNumeral numberOne, numberTwo, result;
+        #region Fields & Properties
 
-        private Establish context = () =>
+        private readonly int _firstNumber;
+        private readonly int _secondNumber;
+        private readonly RomanNumeral _firstRomanNumeral;
+        private readonly RomanNumeral _secondRomanNumeral;
+
+        #endregion
+
+        #region Constructors
+
+        /// <summary>
+        /// Initializes a new instance of the <see cref="MathTests"/> class.
+        /// </summary>
+        public MathTests()
         {
             var random = new Random(DateTime.Now.Millisecond);
-            var first = random.Next(50, 100);
-            var second = random.Next(1, 39);
 
-            numberOne = new RomanNumeral(first);
-            numberTwo = new RomanNumeral(second);
-            expectedResult = first * second;
-        };
+            _firstNumber = random.Next(1, 39);
+            _secondNumber = random.Next(50, 100);
 
-        private Because test = () =>
+            _firstRomanNumeral = new RomanNumeral(_firstNumber);
+            _secondRomanNumeral = new RomanNumeral(_secondNumber);
+        }
+
+        #endregion
+
+        #region Tests
+
+        [Fact]
+        public void Multiply()
         {
-            result = numberOne * numberTwo;
-        };
+            var expectedResult = _firstNumber * _secondNumber;
+            var result = _firstRomanNumeral * _secondRomanNumeral;
 
-        private It Should_have_an_equivalent_result_to_the_expected_result =
-            () => result.ToInt().ShouldEqual(expectedResult);
-    }
+            result.ToInt().Should().Be(expectedResult);
+        }
 
-    /// <summary>
-    /// Division
-    /// </summary>
-    [Tags("Math")]
-    [Subject(typeof(RomanNumeral))]
-    public class When_dividing_two_numbers
-    {
-        protected static int expectedResult;
-        protected static RomanNumeral numberOne, numberTwo, result;
-
-        private Establish context = () =>
+        [Fact]
+        public void Divide()
         {
-            var random = new Random(DateTime.Now.Millisecond);
-            var first = random.Next(50, 100);
-            var second = random.Next(1, 39);
+            var expectedResult = _secondNumber / _firstNumber;
+            var result = _secondRomanNumeral / _firstRomanNumeral;
 
-            numberOne = new RomanNumeral(first);
-            numberTwo = new RomanNumeral(second);
-            expectedResult = first / second;
-        };
+            result.ToInt().Should().Be(expectedResult);
+        }
 
-        private Because test = () =>
+        [Fact]
+        public void Add()
         {
-            result = numberOne / numberTwo;
-        };
+            var expectedResult = _firstNumber + _secondNumber;
+            var result = _firstRomanNumeral + _secondRomanNumeral;
 
-        private It Should_have_an_equivalent_result_to_the_expected_result =
-            () => result.ToInt().ShouldEqual(expectedResult);
-    }
+            result.ToInt().Should().Be(expectedResult);
+        }
 
-    /// <summary>
-    /// Addition
-    /// </summary>
-    [Tags("Math")]
-    [Subject(typeof(RomanNumeral))]
-    public class When_adding_two_numbers
-    {
-        protected static int expectedResult;
-        protected static RomanNumeral numberOne, numberTwo, result;
-
-        private Establish context = () =>
+        [Fact]
+        public void Subtract()
         {
-            var random = new Random(DateTime.Now.Millisecond);
-            var first = random.Next(50, 100);
-            var second = random.Next(1, 39);
+            var expectedResult = _secondNumber - _firstNumber;
+            var result = _secondRomanNumeral - _firstRomanNumeral;
 
-            numberOne = new RomanNumeral(first);
-            numberTwo = new RomanNumeral(second);
-            expectedResult = first + second;
-        };
+            result.ToInt().Should().Be(expectedResult);
+        }
 
-        private Because test = () =>
-        {
-            result = numberOne + numberTwo;
-        };
-
-        private It Should_have_an_equivalent_result_to_the_expected_result =
-            () => result.ToInt().ShouldEqual(expectedResult);
-    }
-
-    /// <summary>
-    /// Subtraction
-    /// </summary>
-    [Tags("Math")]
-    [Subject(typeof(RomanNumeral))]
-    public class When_subtracting_two_numbers
-    {
-        protected static int expectedResult;
-        protected static RomanNumeral numberOne, numberTwo, result;
-
-        private Establish context = () =>
-        {
-            var random = new Random(DateTime.Now.Millisecond);
-            var first = random.Next(50, 100);
-            var second = random.Next(1, 39);
-
-            numberOne = new RomanNumeral(first);
-            numberTwo = new RomanNumeral(second);
-            expectedResult = first - second;
-        };
-
-        private Because test = () =>
-        {
-            result = numberOne - numberTwo;
-        };
-
-        private It Should_have_an_equivalent_result_to_the_expected_result =
-            () => result.ToInt().ShouldEqual(expectedResult);
+        #endregion
     }
 }

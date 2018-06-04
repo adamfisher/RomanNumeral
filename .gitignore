@@ -1,0 +1,5 @@
+RomanNumeral/bin/
+RomanNumeral/obj/
+RomanNumeral.Tests/obj/
+RomanNumeral.Tests/bin/
+.vs/
