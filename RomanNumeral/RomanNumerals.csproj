@@ -1,9 +1,7 @@
-<Project Sdk="Microsoft.NET.Sdk" ToolsVersion="15.0">
+﻿<Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>
-    <TargetFramework>netstandard1.0</TargetFramework>
-    <FileUpgradeFlags>0</FileUpgradeFlags>
-    <OldToolsVersion>2.0</OldToolsVersion>
-    <Version>2.0.0</Version>
+    <TargetFramework>netstandard2.0</TargetFramework>
+    <Version>2.1.0</Version>
     <Authors>Adam Fisher</Authors>
     <Product />
     <Description>A numeric type representing roman numerals.</Description>
@@ -12,8 +10,6 @@
     <PackageProjectUrl>https://github.com/adamfisher/RomanNumeral</PackageProjectUrl>
     <PackageLicenseUrl>https://github.com/adamfisher/RomanNumeral/blob/master/LICENSE</PackageLicenseUrl>
     <PackageTags>roman numeral, roman, numeral, data type, number, math</PackageTags>
-    <AssemblyVersion>2.0.0.0</AssemblyVersion>
-    <FileVersion>2.0.0.0</FileVersion>
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
     <PackageId>RomanNumeral</PackageId>
   </PropertyGroup>

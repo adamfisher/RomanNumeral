@@ -219,6 +219,30 @@ namespace RomanNumerals
         #region Operators
 
         /// <summary>
+        /// Implements the operator ++.
+        /// </summary>
+        /// <param name="numeral">The numeral.</param>
+        /// <returns>
+        /// The result of the operator.
+        /// </returns>
+        public static RomanNumeral operator ++(RomanNumeral numeral)
+        {
+            return new RomanNumeral(numeral._value + 1);
+        }
+
+        /// <summary>
+        /// Implements the operator --.
+        /// </summary>
+        /// <param name="numeral">The numeral.</param>
+        /// <returns>
+        /// The result of the operator.
+        /// </returns>
+        public static RomanNumeral operator --(RomanNumeral numeral)
+        {
+            return new RomanNumeral(numeral._value - 1);
+        }
+
+        /// <summary>
         /// Implements the operator *.
         /// </summary>
         /// <param name="firstNumeral">The first numeral.</param>
@@ -295,7 +319,8 @@ namespace RomanNumerals
                 var value = (int) obj;
                 return _value.CompareTo(value);
             }
-            else if (obj is string)
+
+            if (obj is string)
             {
                 int value;
                 var numeral = obj as string;
@@ -320,7 +345,7 @@ namespace RomanNumerals
         }
 
         /// <summary>
-        /// Equalses the specified other.
+        /// Checks equality of two roman numerals by value.
         /// </summary>
         /// <param name="other">The other.</param>
         /// <returns></returns>
